@@ -8,7 +8,7 @@ public class MailerDaemon {
 
 
     public static void main(String[] args) {
-        for(MXRecord record : WebUtil.resolveMxRecords("yahoo.com")) {
+        for(MXRecord record : WebUtil.resolveMxRecords("srv1.mail-tester.com")) {
             try {
                 System.out.println("Mailer connecting to : " + record.getTarget());
 

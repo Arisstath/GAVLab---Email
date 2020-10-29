@@ -1,0 +1,5 @@
+package gr.uop.gav.mailerdaemon.smtp;
+
+public enum SmtpState {
+    WAITING_FOR_READY, WAITING_FOR_HELO_OK, WAITING_FOR_SENDER_OK, WAITING_FOR_RECIPIENT_OK, WAITING_FOR_DATA, WAITING_FOR_DELIVERY;
+}
